@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>大作业</title>
+    <link rel="stylesheet" href="./layui/css/layui.css" media="all" />
+    <!-- 加载layui的css-->
+    <link rel="stylesheet" href="./css/project.css" />
+    <link rel="stylesheet" href="./css/history.css" />
+  </head>
+  <body>
+    <div class="all">
+      <div class="bgdiv layui-bg-gray">
+        <!-- 这是第一部分的导航栏  layui-main style="position: fixed"-->
+        <div class="firdiv" width: 100%">
+        <!-- layui-nav-child-c 加来layui居中显示 ；layui-bg-green 背景颜色设置-->
+        <ul class="layui-nav layui-bg-cyan layui-nav-child-c" ">
+          <li class="layui-nav-item layui-this">
+            <a href="">首页</a>
+          </li>
+          <li class="layui-nav-item"><a href="#vedio">视频栏目</a></li>
+          <li class="layui-nav-item">
+            <a href="javascript:;">主题学习</a>
+            <dl class="layui-nav-child">
+              <dd><a href="#1">第一部分</a></dd>
+              <dd><a href="#2">第二部分</a></dd>
+              <dd><a href="#3">第三部分</a></dd>
+            </dl>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+    <!-- 第一部分结束 -->
+    <!-- 第二部分：这个是轮播图 ,加载layui的 1) 外层元素的 class="layui-carousel" 用来标识为一个轮播容器
+2) 内层元素的属性 carousel-item 用来标识条目-->
+    <div class="layui-carousel" id="test1">
+      <div carousel-item="">
+        <div>
+          <a href="#vedio">
+            <img src="./picture/党史学习.jpg" class="carousel_pic" />
+          </a>
+        </div>
+        <div>
+          <a href="#4">
+            <img src="./picture/head.png" class="carousel_pic" />
+          </a>
+        </div>
+        <!-- 这里可以额外添加轮播图，不会影响整体的网页 -->
+        <!-- <div>
+          <img
+            src="../myProject/image/启航-中共一大会议.jpg"
+            class="carousel_pic"
+          />
+        </div> -->
+      </div>
+    </div>
+    <!-- 第二部分结束 -->
+
+    <!-- 第四部分：视频 -->
+      <div class="vedioBox" id="vedio">
+        <!-- 视频 -->
+        <video
+          src="./picture/党史视频.mp4"
+          autoplay=""
+          muted=""
+          loop=""
+          style="width: 100%"
+          id="vi"
+        ></video>
+        <button
+          onclick="document.getElementById('vi').currentTime=0"
+          style="margin: 0 auto"
+        >
+          从头播放
+        </button>
+      </div>
+      <!-- 第四部分结束 -->
+
+      <!-- 第三部分 ：主题-->
+      <div class="bgdiv-1">
+        <div class="bgdiv-1-in layui-main">
+          <!-- 1、图片 -->
+          <div class="bgdiv-1-in-pic" >
+            <img src="./picture/head.png" alt="" style="width: 100%" id="4"/>
+          </div>
+          <!-- 2、文字 -->
+          <div style="background-color: #a53d3c; height: 4px" id="1"></div>
+          <div class="bgdiv-1-in-text" >
+            <div class="test-left" id="test"></div>
+            <div class="text-pic" id="test">
+              <img
+                src="./picture/新民主.jpg"
+                alt=""
+                style="width: 300px; height: 240px"
+              />
+            </div>
+            <div class="test-right" id="test">
+              <p id="test" class="test-p layui-font-16">
+                1921年7月，中国共产党的成立是近代中国革命历史上划时代的里程碑。
+                自从有了中国共产党，灾难深重的中国人民有了可以信赖的组织者和领导者，
+                中国革命有了坚强的领导力量。在中国共产党领导下，经过北伐战争、土地革命战争、
+                抗日战争和全国解放战争，中国人民取得了新民主主义革命的伟大胜利，
+                赢得了民族独立和人民解放，建立了新中国。本部分展览展出了20世纪以来不同时期美术
+                家的部分经典主题创作，也特别选取了部分红军长征题材的优秀作品予以集中展示，
+                以纪念中国工农红军长征胜利80周年。
+              </p>
+            </div>
+          </div>
+          <!-- 3、 油画部分 -->
+          <div class="bgdiv-1-in-draw">
+            <div class="draw" id="test">
+              <a href="./smallPage/1.html" target="blank">
+                <img src="../BigProject/smallPage/image/五四运动.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/2.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/启航-中共一大会议.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/3.html" target="blank">
+                <img src="../BigProject/smallPage/image/五卅运动.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/4.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/国共第一次合作.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/5-1.html" target="blank">
+                <img src="../BigProject/smallPage/image/南昌起义.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/5-2.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/八七会议地址.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/5-3.html" target="blank">
+                <img src="../BigProject/smallPage/image/秋收起义.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/5-4-1.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/更喜眠山千里雪.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/5-4-2.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/而今漫步从头越.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/5-5.html" target="blank">
+                <img src="../BigProject/smallPage/image/遵义会议.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/6.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/张学良和左杨虎.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/8.html" target="blank">
+                <img src="../BigProject/smallPage/image/皖南事变2.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/9.html" target="blank">
+                <img src="../BigProject/smallPage/image/重庆谈判.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/10.html" target="blank">
+                <img src="../BigProject/smallPage/image/三大战役.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/11.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/中华人民共和国成立.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <!-- <hr class="layui-border-red" /> -->
+          </div>
+          <!-- 第二部分的文字 -->
+          <!-- 用来分割的 -->
+          <div style="background-color: #a53d3c; height: 4px" id="2"></div>
+          <div class="bgdiv-1-in-text">
+            <div class="test-left" id="test"></div>
+            <div class="text-pic" id="test">
+              <img
+                src="./picture/社会主义.jpg"
+                alt=""
+                style="width: 300px; height: 240px"
+              />
+            </div>
+            <div class="test-right" id="test">
+              <p id="test" class="test-p layui-font-16">
+                中华人民共和国的成立开启了中国历史发展的新纪元，中国人民从此站立起来了。
+                中国共产党团结带领全国各族人民，自力更生，艰苦奋斗，万众一心，奋发图强，
+                建立了社会主义的基本制度，初步建立了独立的完整的工业体系和国民经济体系，
+                取得了社会主义革命和建设的一系列伟大成就，为当代中国的一切发展进步奠定了
+                根本政治前提和制度基础。本部分展览以几代美术家创作的反映社会主义革命和建设时期的作品
+                为主要内容，旨在彰显中国共产党领导新中国各方面建设取得的突出成就。
+              </p>
+            </div>
+          </div>
+          <!-- 第三部分 油画部分 -->
+          <div class="bgdiv-1-in-draw">
+            <div class="draw" id="test">
+              <a href="./smallPage/12-2.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/周恩来出席万隆会议.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/12-1.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/杭县农民争交农业税.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/13-1.html" target="blank">
+                <img src="../BigProject/smallPage/image/雷锋.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/13-2.html" target="blank">
+                <img src="../BigProject/smallPage/image/大跃进.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/13-3.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/石油工人无冬天.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/14.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/文化大革命.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/24.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/24锦绣河山.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/25.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/25庆祝中国共产党成立三十周年.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/26.html" target="blank">
+                <img src="../BigProject/smallPage/image/26阅读.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/27.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/27粒粒皆辛苦.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/28.html" target="blank">
+                <img src="../BigProject/smallPage/image/28焦裕禄.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/29.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/29我是海燕.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <!-- 第二部分的文字 -->
+          <div style="background-color: #a53d3c; height: 4px" id="3"></div>
+          <div class="bgdiv-1-in-text">
+            <div class="test-left" id="test"></div>
+            <div class="text-pic" id="test">
+              <img
+                src="./picture/改革开放以来.jpg"
+                alt=""
+                style="width: 300px; height: 240px"
+              />
+            </div>
+            <div class="test-right" id="test">
+              <p id="test" class="test-p layui-font-16">
+                党的十一届三中全会开启了我国改革开放和社会主义现代化建设新时期，
+                开创了中国特色社会主义的伟大事业。党的十八大以来，以习近平同志为总书记的党中央，
+                高举中国特色社会主义伟大旗帜，带领全党全国各族人民接力奋斗，
+                为实现中华民族伟大复兴的中国梦奋勇前进。
+                本部分展览反映了改革开放以来创作的一大批弘扬中国精神、凝聚中国力量的优秀作品。
+              </p>
+            </div>
+          </div>
+          <!-- 第三部分 油画部分 -->
+          <div class="bgdiv-1-in-draw">
+            <div class="draw" id="test">
+              <a href="./smallPage/15.html" target="blank">
+                <img src="../BigProject/smallPage/image/小岗.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/16.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/东风万里处处春.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/17.html" target="blank">
+                <img src="../BigProject/smallPage/image/香港回归.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/18.html" target="blank">
+                <img src="../BigProject/smallPage/image/澳门回归.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/19.html" target="blank">
+                <img src="../BigProject/smallPage/image/抗击非典.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/20.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/汶川大地震.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/21.html" target="blank">
+                <img
+                  src="../BigProject/smallPage/image/北京奥运会.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/22.html" target="blank">
+                <img src="../BigProject/smallPage/image/G20峰会.jpg" alt="" />
+              </a>
+            </div>
+            <div class="draw" id="test">
+              <a href="./smallPage/23.html" target="blank">
+                <img src="../BigProject/smallPage/image/新冠.jpg" alt="" />
+              </a>
+            </div>
+            <!-- <hr class="layui-border-red" /> -->
+          </div>
+        </div>
+      </div>
+      <!-- 第三部分结束 -->
+      <!-- 最后一个加载的按钮 -->
+      <div style="text-align: center;">
+        <button type="button" class="layui-btn layui-btn-radius layui-btn-primary"  onclick="window.location.href = './learn history.html'">加载看看</button>
+      </div>
+    </div>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./layui/layui.js" charset="utf-8"></script>
+    <script src="./js/project.js"></script>
+    <!-- 加载layui -->
+  </body>
+</html>
